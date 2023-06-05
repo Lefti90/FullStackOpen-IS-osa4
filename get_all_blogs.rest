@@ -1,0 +1,9 @@
+POST https://render-test-u0up.onrender.com/api/persons
+Content-Type: application/json
+
+{
+  "title": "String",
+  "author": "String",
+  "url": "String",
+  "likes": 5
+}
