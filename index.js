@@ -16,7 +16,7 @@ const blogSchema = mongoose.Schema({
   likes: Number
 })
 
-const Blog = mongoose.model('Blog', blogSchema)
+//const Blog = mongoose.model('Blog', blogSchema)
 
 const mongoUrl = process.env.MONGODB_URI // 
 //const mongoUrl = 'mongodb://localhost/bloglist'
