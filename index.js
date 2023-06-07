@@ -8,7 +8,6 @@ const Blog = require('./models/blog')
 
 app.use(cors())
 app.use(express.json())
-app.use(express.static('build'))
 
 const blogSchema = mongoose.Schema({
   title: String,
