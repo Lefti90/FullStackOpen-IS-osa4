@@ -19,9 +19,9 @@ const blogSchema = mongoose.Schema({
 
 //const Blog = mongoose.model('Blog', blogSchema)
 
-const mongoUrl = process.env.MONGODB_URI // 
+//const mongoUrl = process.env.MONGODB_URI // 
 //const mongoUrl = 'mongodb://localhost/bloglist'
-mongoose.connect(mongoUrl)
+//mongoose.connect(mongoUrl)
 
 
 //ERROR HANDLER
@@ -72,8 +72,8 @@ app.post('/api/blogs', (request, response, next) => {
   }
 
   addBlog(body.title, body.author, body.url, body.likes)
-    .then((savedblog) => {
-      response.json(savedblog)
+    .then((savedBlog) => {
+      response.json(savedBlog)
     })
     .catch((error) => next(error))
 }, errorHandler)

@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const blog = require('./models/blog')
+const Blog = require('./models/blog')
 require('dotenv').config()
 
 let db // Store the MongoDB client connection
@@ -25,9 +25,9 @@ const addBlog = async (title, author, url, likes) => {
       url,
       likes
     })
-    const savedblog = await blog.save()
-    console.log(`Added ${savedblog.title} to the bloglist`)
-    return savedblog
+    const savedBlog = await blog.save()
+    console.log(`Added ${savedBlog.title} to the bloglist`)
+    return savedBlog
   } catch (error) {
     console.error('Error adding a blog:', error)
     throw error
