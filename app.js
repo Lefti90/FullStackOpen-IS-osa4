@@ -8,8 +8,6 @@ const logger = require('./utils/logger')
 const mongoose = require('mongoose')
 
 
-app.use('/api/blogs', blogsRouter)
-
 mongoose.set('strictQuery', false)
 
 logger.info('connecting to', config.MONGODB_URI)

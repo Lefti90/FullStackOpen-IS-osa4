@@ -2,8 +2,8 @@ POST https://osa4.onrender.com/api/blogs
 Content-Type: application/json
 
 {
-  "title": "String",
-  "author": "String",
-  "url": "String",
-  "likes": 5
+  "title": "Blogi2",
+  "author": "Pena",
+  "url": "penanblogi.com",
+  "likes": 666
 }
