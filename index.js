@@ -3,11 +3,12 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 const mongoose = require('mongoose')
-const { connectToDatabase, addBlog, addblog } = require('./mongo')
+const { connectToDatabase, addBlog} = require('./mongo')
 const Blog = require('./models/blog')
 
 app.use(cors())
 app.use(express.json())
+app.use(express.static('build'))
 
 const blogSchema = mongoose.Schema({
   title: String,
