@@ -16,8 +16,18 @@ const favorite = (blogs) =>{
     return blogs.find((blog) => blog.likes === maxLikes)
 }
 
+const favAuthor = (blogs) =>{
+    const maxLikes = Math.max(...blogs.map((blog) => blog.likes))
+    const favAuth = blogs.find((blog) => blog.likes === maxLikes)
+    return {
+        author: favAuth.author,
+        likes: favAuth.likes
+    }
+}
+
   module.exports = {
     dummy,
     likes,
-    favorite
+    favorite,
+    favAuthor
   }
