@@ -27,6 +27,26 @@ test('Identificator is id', async () =>{
       })
 })
 
+test.only('Blog was added successfully to DB', async() =>{
+    const newBlog = {
+        "title": "Test blog",
+        "author": "Tester",
+        "url": "test.com",
+        "likes": 1
+      }
+
+      await api
+      .post('/api/blogs')
+      .send(newBlog)
+      .expect('Content-Type', /application\/json/)
+
+      const response = await api.get('/api/blogs')
+
+      const titles = response.body.map(r => r.title)
+
+      expect(titles).toContain('Test blog')
+})
+
 afterAll(async () => {
   await mongoose.connection.close()
 })
