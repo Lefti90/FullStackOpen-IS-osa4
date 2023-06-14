@@ -1,9 +1,13 @@
-POST https://osa4.onrender.com/api/blogs
+DELETE https://osa4.onrender.com/api/blogs
 Content-Type: application/json
 
 {
-  "title": "_Id to id",
-  "author": "Ile",
-  "url": "blogi2.com",
-  "likes": 2
+  "id": "1"
 }
+
+# {
+#   "title": "_Id to id",
+#   "author": "Ile",
+#   "url": "blogi2.com",
+#   "likes": 2
+# }

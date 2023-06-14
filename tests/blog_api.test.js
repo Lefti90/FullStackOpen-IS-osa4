@@ -27,7 +27,7 @@ test('Identificator is id', async () =>{
       })
 })
 
-test.only('Blog was added successfully to DB', async() =>{
+test('Blog was added successfully to DB', async() =>{
     const newBlog = {
         "title": "Test blog",
         "author": "Tester",
@@ -45,6 +45,17 @@ test.only('Blog was added successfully to DB', async() =>{
       const titles = response.body.map(r => r.title)
 
       expect(titles).toContain('Test blog')
+})
+
+test('Blog was deleted succesfully from DB', async() =>{
+    const deletableBlog ={
+        title: 'Test blog'
+    }
+
+    await api
+    .delete('/api/blogs')
+    .send(deletableBlog)
+    .expect(204)
 })
 
 afterAll(async () => {
