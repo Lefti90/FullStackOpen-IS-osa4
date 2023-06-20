@@ -1,9 +1,11 @@
-DELETE https://osa4.onrender.com/api/blogs
+POST https://osa4.onrender.com/api/users
 Content-Type: application/json
 
 {
-  "id": "1"
-}
+    "username" : "Test",
+    "name" : "user",
+    "passwordHash" : "asd"
+  }
 
 # {
 #   "title": "_Id to id",
