@@ -1,4 +1,4 @@
-POST https://osa4.onrender.com/api/users
+POST https://osa4.onrender.com/api/blogs
 Content-Type: application/json
 
 {
