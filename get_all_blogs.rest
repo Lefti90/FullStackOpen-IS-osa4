@@ -1,6 +1,6 @@
 #GET https://osa4.onrender.com/api/blogs
 
-GET http://localhost:3000/api/blogs/
+#GET http://localhost:3000/api/blogs/
 
 # POST http://localhost:3000/api/blogs
 # Content-Type: application/json
@@ -12,11 +12,12 @@ GET http://localhost:3000/api/blogs/
 #   "likes": 2
 # }
 
-# DELETE DELETE http://localhost:3000/api/blogs/Blogi2
+DELETE http://localhost:3000/api/blogs/
 
-# {
-#   "title": "Blogi2"
-# }
+{
+   "title": "Test blog"
+}
+
 
 
 
