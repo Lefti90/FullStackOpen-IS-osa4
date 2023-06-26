@@ -1,15 +1,29 @@
-POST https://osa4.onrender.com/api/blogs
-Content-Type: application/json
+#GET https://osa4.onrender.com/api/blogs
 
-{
-    "username" : "Test",
-    "name" : "user",
-    "password" : "asd"
-  }
+GET http://localhost:3000/api/blogs/
+
+# POST http://localhost:3000/api/blogs
+# Content-Type: application/json
 
 # {
-#   "title": "_Id to id",
+#   "title": "Test blog2",
 #   "author": "Ile",
 #   "url": "blogi2.com",
 #   "likes": 2
 # }
+
+# DELETE DELETE http://localhost:3000/api/blogs/Blogi2
+
+# {
+#   "title": "Blogi2"
+# }
+
+
+
+#GET http://localhost:3000/api/users
+
+# {
+#     "username" : "Test",
+#     "name" : "user",
+#     "password" : "asd"
+#   }
