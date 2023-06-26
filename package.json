@@ -3,9 +3,8 @@
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "build": "yarn",
+    "build": "npm start",
     "start": "cross-env NODE_ENV=production node index.js",
     "dev": "cross-env NODE_ENV=development nodemon index.js",
     "test": "cross-env NODE_ENV=test jest --verbose --runInBand"
@@ -31,11 +30,13 @@
     "nodemon": "^2.0.22"
   },
   "devDependencies": {
+    "@flydotio/dockerfile": "^0.2.15",
     "cross-env": "^7.0.3",
     "jest": "^29.5.0",
     "supertest": "^6.3.3"
   },
   "jest": {
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "globalTeardown": "./tests/teardown.js"
   }
 }
