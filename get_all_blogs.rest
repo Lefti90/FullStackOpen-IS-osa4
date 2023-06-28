@@ -1,4 +1,9 @@
+### renderer blogs
+
 #GET https://osa4.onrender.com/api/blogs
+
+
+### local host blogs
 
 #GET http://localhost:3000/api/blogs/
 
@@ -12,19 +17,21 @@
 #   "likes": 2
 # }
 
-DELETE http://localhost:3000/api/blogs/
+# DELETE http://localhost:3000/api/blogs/
 
-{
-   "title": "Test blog"
-}
+# {
+#    "title": "Test blog"
+# }
 
-
-
+### localhost users
 
 #GET http://localhost:3000/api/users
 
-# {
-#     "username" : "Test",
-#     "name" : "user",
-#     "password" : "asd"
-#   }
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+  "username" : "Test",
+  "name" : "user",
+  "password" : "asd"
+}
