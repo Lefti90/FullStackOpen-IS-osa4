@@ -1,5 +1,5 @@
 const blog = require("../models/blog")
-const User = require('../models/user')
+const User = require("../models/user")
 
 const dummy = (blogs) => {
     return 1

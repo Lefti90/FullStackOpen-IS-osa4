@@ -9,7 +9,6 @@ test('blogs are returned as json', async () => {
     .get('/api/blogs')
     .expect(200)
     .expect('Content-Type', /application\/json/)
-    .timeout(10000) //is this really taking this long?
 })
 
 test('amount of blogs are correct', async () =>{
