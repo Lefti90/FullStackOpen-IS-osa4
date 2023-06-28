@@ -8,7 +8,7 @@ const logger = require('./utils/logger')
 const mongoose = require('mongoose')
 require('express-async-errors')
 const usersRouter = require('./controllers/users')
-//const loginRouter = require('./controllers/login')
+const loginRouter = require('./controllers/login')
 
 
 
@@ -34,7 +34,7 @@ app.use('/api/blogs', blogsRouter)
 
 app.use('/api/users', usersRouter)
 
-//app.use('/api/login', loginRouter)
+app.use('/api/login', loginRouter)
 
 app.use(middleware.unknownEndpoint)
 app.use(middleware.errorHandler)
