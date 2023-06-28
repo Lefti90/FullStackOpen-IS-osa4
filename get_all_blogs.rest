@@ -7,15 +7,15 @@
 
 #GET http://localhost:3000/api/blogs/
 
-# POST http://localhost:3000/api/blogs
-# Content-Type: application/json
+POST http://localhost:3000/api/blogs
+Content-Type: application/json
 
-# {
-#   "title": "Test blog2",
-#   "author": "Ile",
-#   "url": "blogi2.com",
-#   "likes": 2
-# }
+{
+  "title": "Test blog7",
+  "author": "Ile",
+  "url": "blogi3.com",
+  "likes": 2
+}
 
 # DELETE http://localhost:3000/api/blogs/
 
@@ -27,11 +27,11 @@
 
 #GET http://localhost:3000/api/users
 
-POST http://localhost:3000/api/users
-Content-Type: application/json
+# POST http://localhost:3000/api/users
+# Content-Type: application/json
 
-{
-  "username" : "Testi",
-  "name" : "user",
-  "password" : "asd"
-}
+# {
+#   "username" : "Testi",
+#   "name" : "user",
+#   "password" : "asd"
+# }
